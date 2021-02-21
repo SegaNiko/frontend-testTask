@@ -1,0 +1,24 @@
+.footer {
+  margin: 0 auto;
+  padding: 0 0 38px 0;
+  height: 184px;
+  font-size: 16px;
+  width: 100%;
+
+  background: url('../img/footer.png'),no-repeat;
+  background-size: cover;
+  &__default {
+    padding: 0 0 20px 0;
+    background: #1C3B55;
+    height: 53px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: flex-end;
+  }
+  &__logo {
+    font-size: 24px;
+  }
+}

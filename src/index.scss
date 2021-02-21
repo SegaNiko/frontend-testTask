@@ -1,0 +1,59 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+html {
+  height: 100%;
+  line-height: normal;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+h1 {
+  font-weight: 400;
+}
+h2 {
+  font-weight: 400;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+p {
+  margin: 0;
+  padding: 0;
+
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+  margin-bottom: 20px;
+  
+  th {
+	font-weight: bold;
+  color:white;
+	padding: 5px;
+  background: #1bbc9b;
+	border: 1px solid #dddddd;
+  }
+  &__td {
+  text-align: center;
+	border: 1px solid #dddddd;
+	padding: 5px;
+  } 
+}

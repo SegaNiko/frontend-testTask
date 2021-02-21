@@ -1,0 +1,89 @@
+.index {
+  height: 620px;
+  margin: 0 auto;
+  width: 100%;
+  background: url("../img/main.png"),center, no-repeat;
+  background-size: cover;
+
+  &__wrap { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+  &__info {
+    width: 50%;
+  }
+  &__img {
+    z-index: 2;
+    margin-top: -20px;
+    width: 400px;
+    height: 583px;
+    background: url("../img/iphone.png");
+    background-size: no-repeat;
+  }
+  &__btn {
+    margin-top:32px;
+    transition: all 2s;
+  }
+  &__btn:hover {
+    color: white;
+    border: 1px soid white;
+    background: linear-gradient(90.95deg, #255D8B 2.29%, #3A80BA 96.79%);
+  }
+
+ 
+
+  
+}
+
+.service {
+  position: relative;
+  color: black;
+  text-align: center;
+  margin: 15px 0 128px 0;
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #1A1A1A;
+  }
+  &__text {
+    margin:0 auto 40px;
+    width: 780px;
+    font-size: 20px;
+    color: #7E7E7E;
+  }
+   &__card-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.input {
+  border: 1px solid white;
+  font-size: 16px;
+  padding: 5px 0;
+  color: #B9B9B9;
+  width: 100%;
+  outline: none;
+  
+  &__wrap {
+    position: absolute;
+    left: 30%;
+    bottom: -52%;
+    margin: 0 auto 0;
+    background: white;
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  &__btn {
+    color: white;
+    background: #3A80BA;
+    border-radius: 8px;
+    padding: 17px 48px;
+  }
+}
