@@ -1,16 +1,17 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
 
-import { Header } from "../../conponents/Header/Header";
-import { Footer } from "../../conponents/Footer/Footer";
+import { NavLink } from "react-router-dom"
+import { Header } from "../../conponents/Header/Header"
+import { Footer } from "../../conponents/Footer/Footer"
 import { Container } from "../../conponents/Container/Container"
 import { Button } from "../../conponents/Button/Button"
+import { Card } from '../../conponents/Card/Card'
 
 import icon1 from "../../assets/img/icon_1.png"
 import icon2 from "../../assets/img/icon_2.png"
 import icon3 from "../../assets/img/icon_3.png"
+
 import "../../assets/scss/Main.scss"
-import { Card } from '../../conponents/Card/Card';
 
 export const MainPage = () => {
   return (

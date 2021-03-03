@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { Logo } from '../Logo/Logo'
+import { Container } from '../Container/Container'
 
 import "../../assets/scss/Header.scss"
-import { Container } from '../Container/Container'
 
 export const Header = () => {
   return (

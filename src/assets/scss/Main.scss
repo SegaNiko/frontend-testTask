@@ -1,25 +1,22 @@
 .index {
-  height: 620px;
+  height: 655px;
   margin: 0 auto;
   width: 100%;
   background: url("../img/main.png"),center, no-repeat;
-  background-size: cover;
 
   &__wrap { 
     display: flex;
     justify-content: space-between;
-    margin-top: 72px;
   }
   &__info {
     width: 50%;
   }
   &__img {
     z-index: 2;
-    margin-top: -20px;
-    width: 400px;
+    margin: -32px 58px 0px 0;
+    width: 365px;
     height: 583px;
-    background: url("../img/iphone.png");
-    background-size: no-repeat;
+    background: url("../img/iphone.png")no-repeat;
   }
   &__btn {
     margin-top:32px;
@@ -69,7 +66,7 @@
   
   &__wrap {
     position: absolute;
-    left: 30%;
+    left: calc(50% - 290px);
     bottom: -52%;
     margin: 0 auto 0;
     background: white;
@@ -85,5 +82,139 @@
     background: #3A80BA;
     border-radius: 8px;
     padding: 17px 48px;
+  }
+}
+
+@media only screen and (max-width : 1280px) {
+  .service {
+    margin: 15px 0 128px 0;
+  
+    &__title {
+      margin-bottom: 25px;
+
+    }
+    &__text {
+      margin:0 auto 50px;
+      width: 580px;
+    }
+    &__card-wrap {
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+    }
+  }
+  
+  .input {
+
+    &__wrap {
+      bottom: -46%;
+    }
+  }
+}
+@media only screen and (max-width : 1024px) {
+  
+  .service {
+    margin: 15px 0 88px 0;
+  
+    &__title {
+      margin-bottom: 25px;
+
+    }
+    &__text {
+      margin:0 auto 50px;
+      width: 580px;
+    }
+    &__card-wrap {
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+    
+    }
+  }
+  .input {
+
+    &__wrap {
+      bottom: -24%;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px)  {
+  .index {
+    height: 500px;
+    background-size: cover;
+    &__wrap {
+      flex-direction: column;}
+    &__info {
+        width: 100%;
+    }
+    &__img {
+      display: none;
+    }
+  }
+  .service {
+    margin: 15px 0 88px 0;
+    &__title {
+      margin: 35px 0 25px;
+    }
+    &__text {
+      margin:10px auto 50px;
+      width: 437px;
+    }
+  }
+  .input {
+
+    &__wrap {
+      width: 400px;
+      left: calc(50% - 200px);
+    }
+  }
+}
+
+@media only screen and (max-width : 600px)  {
+
+  .input {
+    &__text{ 
+      font-size: 17px;    
+      margin: 10px auto 32px;
+    }
+    &__wrap {
+      bottom: -18%;
+      width: 400px;
+      left: calc(50% - 200px);
+    }
+  }
+}
+@media only screen and (max-width : 533px)  {
+  .index {
+    &__text {
+      font-size: 20px;
+    }
+  }
+  .service {
+    margin: 15px 0 88px 0;
+  
+    &__text {
+      margin:10px auto 50px;
+      width: 300px;
+    }
+
+  }
+}
+
+@media only screen and (max-width : 375px)  {
+  .index__text{
+    margin: 36px 0 0 0;
+    font-size: 16px;
+  }
+  .input {
+
+    &__wrap {
+      bottom: -16%;
+      font-size: 13px;
+      width: 300px;
+      left: calc(50% - 150px);
+    }
+    &__btn {
+      padding: 15px 25px;
+    }
   }
 }

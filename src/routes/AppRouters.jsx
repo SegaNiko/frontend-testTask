@@ -1,9 +1,11 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
+import React from "react"
 
-import { ChartsPage } from "../pages/ChartsPage/ChartsPage";
-import { MainPage } from "../pages/MainPage/MainPage";
-import { StatsPage } from "../pages/StatsPage/StatsPage";
+import { Switch, Route, Redirect } from "react-router-dom"
+
+import { NotFound } from "../conponents/NotFound/NotFound"
+import { ChartsPage } from "../pages/ChartsPage/ChartsPage"
+import { MainPage } from "../pages/MainPage/MainPage"
+import { StatsPage } from "../pages/StatsPage/StatsPage"
 
 
 export const AppRouters = () => {
@@ -15,10 +17,16 @@ export const AppRouters = () => {
       <Route exact path="/stats">
         <StatsPage></StatsPage>
       </Route>
-      <Route exact path="/charts">
+      {/* из-за особеностей прокси запросов с фронта назвал роут  {api} фиксится при деплое на {user}*/}
+      <Route exact path="/api/:id">
         <ChartsPage></ChartsPage>
       </Route>
-      <Route exact path="*"></Route>
+      <Route path="/404">
+        <NotFound />
+      </Route>
+    
+      <Redirect to="/404">
+      </Redirect>
     </Switch>
   )
 }

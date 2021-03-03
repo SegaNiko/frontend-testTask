@@ -17,19 +17,34 @@ body {
   color: white;
 }
 main {
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
+  position: relative;
 }
-h1 {
+h1,h2 {
   font-weight: 400;
 }
-h2 {
-  font-weight: 400;
-}
+
 h3 {
+  cursor:pointer;
   font-size: 40px;
   font-weight: 400;
+}
+h4 {
+  margin: 24px 0 16px 0 ;
+  color:black;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+h5 {
+  margin: 0 0 24px 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1A1A1A;
 }
 p {
   margin: 0;
@@ -37,23 +52,43 @@ p {
 
 }
 
-.table {
-	width: 100%;
-	margin-bottom: 20px;
-	border: 1px solid #dddddd;
-	border-collapse: collapse; 
-  margin-bottom: 20px;
-  
-  th {
-	font-weight: bold;
-  color:white;
-	padding: 5px;
-  background: #1bbc9b;
-	border: 1px solid #dddddd;
+.logo__link {
+  cursor:pointer;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width : 1024px) {
+  html{
+    max-width: 1024px;
+    width: 100%;
   }
-  &__td {
-  text-align: center;
-	border: 1px solid #dddddd;
-	padding: 5px;
-  } 
+  #root{ 
+    max-width: 1024px;
+    width: 100%;
+  }
+  body {
+    max-width: 1024px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 768px)  {
+  h1{
+    padding: 20px 0 10px;
+  }
+ 
+}
+@media only screen and (max-width : 533px)  {
+  h1 {
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width : 375px)  {
+  h1 {
+    line-height: 1;
+  }
 }

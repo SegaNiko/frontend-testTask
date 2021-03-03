@@ -1,0 +1,43 @@
+.swiper {
+  &__elem{
+    color:black;
+    background: white;
+    border: 2px solid #3A80BA;
+    text-align: center;
+    cursor:pointer;
+    padding: 10px;
+    border-radius: 5px ;
+    box-sizing: border-box;
+  }
+  &__wrap{
+    margin: 40px auto 70px;
+    position: relative;
+    width: 300px;
+  }
+  &-container {
+    position:static;
+    width: 100%;
+  }
+  &-button-prev {
+    left: -54px;
+  }
+  &-button-next {
+    right: -49px;
+  
+  }
+  // &-slide-active {
+    //   color:white;
+    //   background:#3A80BA;
+    // }
+}
+@media only screen and (max-width : 375px)  {
+  .swiper {
+    &__elem{
+      font-size: 15px;
+      padding: 7px;
+    }
+    &__wrap{
+      width: 200px;
+    }
+  }
+}
